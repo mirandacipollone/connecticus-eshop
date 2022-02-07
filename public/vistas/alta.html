@@ -1,0 +1,92 @@
+<div class="fondo">
+        
+    <div id="alta-form">
+
+        <div class="container-alta">
+
+            <fieldset class="central">
+                        
+                <legend class="central__title">Alta de Producto</legend>
+                    
+                <form autocomplete="off">
+                    <!-- Campo de nombre -->
+                        <div class = "alerta"></div>
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text">
+                        
+                    
+                        <!-- Campo de precio -->
+                        <div class = "alerta"></div>
+                        <label for="precio">Precio:</label>
+                        <input id="precio" type="text">
+                        
+                    
+                        <!-- Campo de stock -->
+                        <div class = "alerta"></div>
+                        <label for="stock">Stock:</label>
+                        <input id="stock" type="text">
+                        
+                    
+                        <!-- Campo de marca -->
+                        <div class = "alerta"></div>
+                        <label for="marca">Marca:</label>
+                        <input id="marca" type="text">
+                        
+                    
+                        <!-- Campo de categoria -->
+                        <div class = "alerta"></div>
+                        <label for="categoria">Categoria:</label>
+                        <input id="categoria" type="text">
+                        
+                    
+                        <!-- Campo de detalles -->
+                        <div class = "alerta"></div>
+                        <label for="detalles">Detalles:</label>
+                        <input id="detalles" type="text">
+                        
+                    
+                        <!-- Campo de foto 
+                        <div></div>
+                        <label for="foto">Foto:</label>
+                        <input id="foto" type="text">-->
+                        
+                    
+                        <!-- Campo de nombre -->
+                        <div class = "alerta"></div>
+                        <label for="envio">Envio:</label>
+                        <input id="envio" type="checkbox">
+
+                        <div id="drop-area">
+                            <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>drag and drop</b> dentro del área punteada</p>
+                            <br>
+                
+                            <input id="foto" type="file" accept="image/*" onchange="formularioAlta.handleFiles(this.files)">
+                            <label class="button" for="foto">File dialog</label>
+                            <br><br>
+                
+                            <progress id="progress-bar" max="100" value="0"></progress>
+                            <div id="gallery"><img src="" alt=""></div>
+                        </div>
+                        
+                    
+                        <div class="center__button"><button class="submits__slide">Agregar<i class="icon-arrow-right"></i></button></div>
+                                
+                </form>
+                    
+                    
+            </fieldset>
+                
+                    
+            
+            <br>
+            <h1 class="central__table">Listado de productos</h1>
+            <br>
+                    
+            <div class="central" id="listado-productos"></div>
+                    
+        </div>         
+
+    </div>
+            
+</div>
+    
